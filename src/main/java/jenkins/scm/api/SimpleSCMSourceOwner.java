@@ -28,12 +28,12 @@ public class SimpleSCMSourceOwner implements SCMSourceOwner {
     }
 
     @Override
-    public @org.jspecify.annotations.NonNull List<SCMSource> getSCMSources() {
+    public @NonNull List<SCMSource> getSCMSources() {
         return List.of(source);
     }
 
     @Override
-    public void onSCMSourceUpdated(@org.jspecify.annotations.NonNull SCMSource source) {
+    public void onSCMSourceUpdated(@NonNull SCMSource source) {
 
     }
 
@@ -123,7 +123,7 @@ public class SimpleSCMSourceOwner implements SCMSourceOwner {
     }
 
     @Override
-    public @org.jspecify.annotations.NonNull ACL getACL() {
+    public @NonNull ACL getACL() {
         return context.getACL();
     }
 }
